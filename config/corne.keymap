@@ -47,6 +47,15 @@
         };
     };
 
+    macros {
+        zs: zs {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&zs &kp>;
+            label = "ZS";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
