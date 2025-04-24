@@ -115,10 +115,10 @@
 
         Symbols {
             bindings = <
-&trans  &trans      &trans       &trans        &trans         &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans      &kp LS(DQT)  &kp LS(LBRC)  &kp LS(RBRC)   &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LS(LT)  &kp LS(GT)   &kp LBKT      &kp RBKT       &kp LS(QMARK)    &trans  &trans  &trans  &trans  &trans  &trans
-                                 &trans        &kp AMPERSAND  &trans           &trans  &trans  &trans
+&trans  &trans         &kp LS(NUMBER_3)   &trans          &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LBKT        &kp RBKT         &kp LS(QMARK)    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans          &kp AMPERSAND    &trans           &trans  &trans  &trans
             >;
         };
     };
