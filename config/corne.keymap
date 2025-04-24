@@ -28,6 +28,23 @@
             flavor = "balanced";
             tapping-term-ms = <200>;
         };
+
+        thirdlayer: thirdlayer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "THIRDLAYER";
+            #binding-cells = <0>;
+            bindings = <&lt 3 PERIOD>, <&kp NON_US_BACKSLASH>;
+        };
+
+        home_row: hr {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -41,10 +58,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp F                   &kp P             &kp B                         &kp J             &kp L  &kp U                       &kp Y    &kp DOT                    &kp BSPC
-&kp ESCAPE  &kp A  &kp R  &kp S                   &kp T             &mt EQUAL G                   &kp M             &kp N  &kp E                       &kp I    &kp O                      &kp DELETE
-&kp TAB     &kp Z  &kp X  &kp C                   &kp D             &kp V                         &kp K             &kp H  &kp COMMA                   &kp DOT  &mt NON_US_BACKSLASH FSLH  &kp RET
-                          &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT  &mt NON_US_BACKSLASH COMMA    &mt SLASH PERIOD  &mo 3  &mt RALT RIGHT_PARENTHESIS
+&kp TAB     &kp Q  &kp W  &kp F                   &kp P             &kp B          &kp J             &kp L  &kp U                       &kp Y    &kp DOT                    &kp BSPC
+&kp ESCAPE  &kp A  &kp R  &kp S                   &kp T             &mt EQUAL G    &kp M             &kp N  &kp E                       &kp I    &kp O                      &kp DELETE
+&kp TAB     &kp Z  &kp X  &kp C                   &kp D             &kp V          &kp K             &kp H  &kp COMMA                   &kp DOT  &mt NON_US_BACKSLASH FSLH  &kp RET
+                          &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT  &thirdlayer    &mt SLASH PERIOD  &mo 3  &mt RALT RIGHT_PARENTHESIS
             >;
         };
 
@@ -59,10 +76,10 @@
 
         Navigation {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &trans    &trans     &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans    &kp DOWN  &trans     &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans    &trans
+&trans  &trans     &trans                &trans                 &trans                  &trans           &kp PG_UP      &kp HOME  &trans    &trans     &trans  &trans
+&trans  &kp LC(A)  &home_row LEFT_ALT R  &home_row LCTRL LC(S)  &home_row LEFT_SHIFT T  &trans           &trans         &kp LEFT  &kp UP    &kp RIGHT  &trans  &trans
+&trans  &kp LC(Z)  &kp LC(X)             &kp LC(C)              &kp LC(D)               &kp LC(LS(V))    &kp PAGE_DOWN  &kp END   &kp DOWN  &trans     &trans  &trans
+                                         &trans                 &trans                  &trans           &trans         &trans    &trans
             >;
         };
 
