@@ -61,7 +61,7 @@
 &tog 4      &kp Q                 &kp W                 &kp F                   &kp P                   &kp B          &kp J             &kp L                   &kp U                       &kp Y                 &mt LS(NUMBER_2) APOS      &kp BSPC
 &kp ESCAPE  &home_row LEFT_WIN A  &home_row LEFT_ALT R  &home_row LCTRL S       &home_row LEFT_SHIFT T  &mt EQUAL G    &kp M             &home_row LEFT_SHIFT N  &home_row RCTRL E           &home_row LEFT_ALT I  &home_row RIGHT_WIN O      &kp DELETE
 &kp TAB     &kp Z                 &kp X                 &kp C                   &kp D                   &kp V          &kp K             &kp H                   &kp COMMA                   &kp DOT               &mt NON_US_BACKSLASH FSLH  &kp RET
-                                                        &lt 6 LEFT_PARENTHESIS  &lt 6 LEFT_SHIFT        &thirdlayer    &mt SLASH PERIOD  &lt 6 SPACE             &mt RALT RIGHT_PARENTHESIS
+                                                        &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT        &thirdlayer    &mt SLASH PERIOD  &lt 3 SPACE             &mt RALT RIGHT_PARENTHESIS
             >;
         };
 
@@ -94,10 +94,10 @@
 
         Excel {
             bindings = <
-&tog 4  &trans  &kp LA(NUMBER_6)  &kp F4     &kp MINUS  &trans                 &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans            &kp COMMA  &kp EQUAL  &kp LS(SEMI)           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans            &kp LC(C)  &trans     &mt LC(LS(V)) LC(V)    &trans  &trans  &trans  &trans  &trans  &trans
-                                  &trans     &trans     &trans                 &trans  &trans  &trans
+&tog 4  &kp LS(LA(LEFT))  &kp LA(LS(RIGHT))  &kp F4     &kp LA(NUMBER_6)  &mt PLUS KP_MINUS      &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans            &trans             &kp COMMA  &kp EQUAL         &kp LS(SEMI)           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mt LC(Y) LC(Z)   &kp LC(X)          &kp LC(C)  &kp LC(D)         &mt LC(LS(V)) LC(V)    &trans  &trans  &trans  &trans  &trans  &trans
+                                             &trans     &trans            &trans                 &trans  &trans  &trans
             >;
         };
 
