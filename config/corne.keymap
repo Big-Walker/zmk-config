@@ -33,7 +33,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "THIRDLAYER";
             #binding-cells = <0>;
-            bindings = <&lt 3 PERIOD>, <&kp NON_US_BACKSLASH>;
+            bindings = <&lt 4 PERIOD>, <&kp NON_US_BACKSLASH>;
         };
 
         home_row: hr {
@@ -61,7 +61,7 @@
 &kp TAB     &kp Q                 &kp W                 &kp F                   &kp P                   &kp B          &kp J             &kp L                   &kp U                       &kp Y                 &mt LS(NUMBER_2) APOS      &kp BSPC
 &kp ESCAPE  &home_row LEFT_WIN A  &home_row LEFT_ALT R  &home_row LCTRL S       &home_row LEFT_SHIFT T  &mt EQUAL G    &kp M             &home_row LEFT_SHIFT N  &home_row RCTRL E           &home_row LEFT_ALT I  &home_row RIGHT_WIN O      &kp DELETE
 &kp TAB     &kp Z                 &kp X                 &kp C                   &kp D                   &kp V          &kp K             &kp H                   &kp COMMA                   &kp DOT               &mt NON_US_BACKSLASH FSLH  &kp RET
-                                                        &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT        &thirdlayer    &mt SLASH PERIOD  &mo 3                   &mt RALT RIGHT_PARENTHESIS
+                                                        &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT        &thirdlayer    &mt SLASH PERIOD  &lt 3 SPACE             &mt RALT RIGHT_PARENTHESIS
             >;
         };
 
@@ -80,6 +80,15 @@
 &trans  &kp LC(A)  &home_row LEFT_ALT R  &home_row LCTRL LC(S)  &home_row LEFT_SHIFT T  &trans           &trans         &kp LEFT  &kp UP    &kp RIGHT  &trans  &trans
 &trans  &kp LC(Z)  &kp LC(X)             &kp LC(C)              &kp LC(D)               &kp LC(LS(V))    &kp PAGE_DOWN  &kp END   &kp DOWN  &trans     &trans  &trans
                                          &trans                 &trans                  &trans           &trans         &trans    &trans
+            >;
+        };
+
+        Symbols {
+            bindings = <
+&trans  &trans         &kp LS(NUMBER_3)   &trans          &kp EXCLAMATION  &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans         &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LBKT        &kp RBKT         &kp LS(QMARK)    &trans  &trans  &trans  &trans  &trans  &trans
+                                          &trans          &kp AMPERSAND    &trans           &trans  &trans  &trans
             >;
         };
 
@@ -106,19 +115,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &kp N6    &kp HOME  &kp UP_ARROW    &kp END    &kp N0     &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LEFT  &kp DOWN  &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans    &trans    &trans          &trans     &trans     &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp RET   &trans    &kp RALT
-            >;
-        };
-
-        Symbols {
-            bindings = <
-&trans  &trans         &kp LS(NUMBER_3)   &trans          &trans           &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR       &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LBKT        &kp RBKT         &kp LS(QMARK)    &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans          &kp AMPERSAND    &trans           &trans  &trans  &trans
+&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &trans   &kp F7   &kp F8   &kp F9  &trans  &kp BSPC
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp F4   &kp F5   &kp F6  &trans  &trans
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans   &kp F1   &kp F2   &kp F3  &trans  &trans
+                                        &kp LGUI      &trans        &kp SPACE       &kp F12  &kp F11  &kp F10
             >;
         };
     };
