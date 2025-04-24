@@ -38,7 +38,7 @@
 
         home_row: hr {
             compatible = "zmk,behavior-hold-tap";
-            label = "HOME_ROW";
+            label = "hr";
             bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
@@ -58,19 +58,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB     &kp Q  &kp W  &kp F                   &kp P             &kp B          &kp J             &kp L  &kp U                       &kp Y    &kp DOT                    &kp BSPC
-&kp ESCAPE  &kp A  &kp R  &kp S                   &kp T             &mt EQUAL G    &kp M             &kp N  &kp E                       &kp I    &kp O                      &kp DELETE
-&kp TAB     &kp Z  &kp X  &kp C                   &kp D             &kp V          &kp K             &kp H  &kp COMMA                   &kp DOT  &mt NON_US_BACKSLASH FSLH  &kp RET
-                          &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT  &thirdlayer    &mt SLASH PERIOD  &mo 3  &mt RALT RIGHT_PARENTHESIS
+&kp TAB     &kp Q                 &kp W                 &kp F                   &kp P                   &kp B          &kp J             &kp L                   &kp U                       &kp Y                 &mt LS(NUMBER_2) APOS      &kp BSPC
+&kp ESCAPE  &home_row LEFT_WIN A  &home_row LEFT_ALT R  &home_row LCTRL S       &home_row LEFT_SHIFT T  &mt EQUAL G    &kp M             &home_row LEFT_SHIFT N  &home_row RCTRL E           &home_row LEFT_ALT I  &home_row RIGHT_WIN O      &kp DELETE
+&kp TAB     &kp Z                 &kp X                 &kp C                   &kp D                   &kp V          &kp K             &kp H                   &kp COMMA                   &kp DOT               &mt NON_US_BACKSLASH FSLH  &kp RET
+                                                        &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT        &thirdlayer    &mt SLASH PERIOD  &mo 3                   &mt RALT RIGHT_PARENTHESIS
             >;
         };
 
         Number {
             bindings = <
-&trans  &trans     &trans     &trans     &trans     &trans       &kp MINUS   &kp N7        &kp N8        &kp N9        &kp SLASH     &trans
-&trans  &kp LC(A)  &trans     &kp LC(S)  &trans     &trans       &kp PLUS    &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &trans
-&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)    &kp COLON   &kp NUMBER_1  &kp NUMBER_2  &kp N3        &trans        &trans
-                              &trans     &trans     &trans       &kp PERIOD  &kp SPACE     &kp N0
+&trans  &trans     &trans     &trans     &trans     &trans       &kp MINUS         &kp N7        &kp N8        &kp N9        &kp SLASH     &trans
+&trans  &kp LC(A)  &trans     &kp LC(S)  &trans     &trans       &kp PLUS          &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp ASTERISK  &trans
+&trans  &kp LC(Z)  &kp LC(X)  &kp LC(C)  &kp LC(D)  &kp LC(V)    &mt COLON PERIOD  &kp NUMBER_1  &kp NUMBER_2  &kp N3        &trans        &trans
+                              &trans     &trans     &trans       &kp PERIOD        &kp SPACE     &kp N0
             >;
         };
 
