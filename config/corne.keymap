@@ -76,9 +76,9 @@
 
         Navigation {
             bindings = <
-&trans  &trans     &trans                &trans                 &trans                  &trans           &kp PG_UP      &kp HOME  &trans    &trans     &trans  &trans
-&trans  &kp LC(A)  &home_row LEFT_ALT R  &home_row LCTRL LC(S)  &home_row LEFT_SHIFT T  &trans           &trans         &kp LEFT  &kp UP    &kp RIGHT  &trans  &trans
-&trans  &kp LC(Z)  &kp LC(X)             &kp LC(C)              &kp LC(D)               &kp LC(LS(V))    &kp PAGE_DOWN  &kp END   &kp DOWN  &trans     &trans  &trans
+&trans  &trans     &trans                &trans                 &trans                  &trans           &kp PG_UP      &kp HOME  &trans    &trans     &trans           &trans
+&trans  &kp LC(A)  &home_row LEFT_ALT R  &home_row LCTRL LC(S)  &home_row LEFT_SHIFT T  &trans           &trans         &kp LEFT  &kp UP    &kp RIGHT  &trans           &trans
+&trans  &kp LC(Z)  &kp LC(X)             &kp LC(C)              &kp LC(D)               &kp LC(LS(V))    &kp PAGE_DOWN  &kp END   &kp DOWN  &trans     &kp PRINTSCREEN  &trans
                                          &trans                 &trans                  &trans           &trans         &trans    &trans
             >;
         };
@@ -86,7 +86,7 @@
         Symbols {
             bindings = <
 &trans  &trans         &kp LS(NUMBER_3)   &trans          &kp EXCLAMATION  &trans           &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans         &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR       &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp CARET      &kp DOUBLE_QUOTES  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp DOLLAR       &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LESS_THAN  &kp GREATER_THAN   &kp LBKT        &kp RBKT         &kp LS(QMARK)    &trans  &trans  &trans  &trans  &trans  &trans
                                           &trans          &kp AMPERSAND    &trans           &trans  &trans  &trans
             >;
@@ -97,7 +97,7 @@
 &tog 4  &kp LS(LA(LEFT))  &kp LA(LS(RIGHT))  &kp F4     &kp LA(NUMBER_6)  &mt PLUS KP_MINUS      &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans            &trans             &kp COMMA  &kp EQUAL         &kp LS(SEMI)           &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &mt LC(Y) LC(Z)   &kp LC(X)          &kp LC(C)  &kp LC(D)         &mt LC(LS(V)) LC(V)    &trans  &trans  &trans  &trans  &trans  &trans
-                                             &trans     &trans            &trans                 &trans  &trans  &trans
+                                             &trans     &trans            &kp SPACE              &trans  &trans  &trans
             >;
         };
 
@@ -116,7 +116,7 @@
             >;
         };
 
-        lower_layer {
+        Function {
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BSPC |
             // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
