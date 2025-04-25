@@ -67,10 +67,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&tog 4      &kp Q                 &kp W                 &kp F                   &kp P                   &kp B          &kp J             &kp L                   &kp U                       &kp Y                 &mt LS(NUMBER_2) APOS      &kp BSPC
-&kp ESCAPE  &home_row LEFT_WIN A  &home_row LEFT_ALT R  &home_row LCTRL S       &home_row LEFT_SHIFT T  &mt EQUAL G    &kp M             &home_row LEFT_SHIFT N  &home_row RCTRL E           &home_row LEFT_ALT I  &home_row RIGHT_WIN O      &kp DELETE
-&kp TAB     &kp Z                 &kp X                 &kp C                   &kp D                   &kp V          &kp K             &kp H                   &kp COMMA                   &kp DOT               &mt NON_US_BACKSLASH FSLH  &kp RET
-                                                        &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT        &thirdlayer    &mt SLASH PERIOD  &lt 3 SPACE             &mt RALT RIGHT_PARENTHESIS
+&tog 4      &kp Q                 &kp W                 &kp F                   &kp P                   &kp B          &kp J             &kp L                   &kp U                    &kp Y                 &mt LS(NUMBER_2) APOS      &kp BSPC
+&kp ESCAPE  &home_row LEFT_WIN A  &home_row LEFT_ALT R  &home_row LCTRL S       &home_row LEFT_SHIFT T  &mt EQUAL G    &kp M             &home_row LEFT_SHIFT N  &home_row RCTRL E        &home_row LEFT_ALT I  &home_row RIGHT_WIN O      &kp DELETE
+&kp TAB     &kp Z                 &kp X                 &kp C                   &kp D                   &kp V          &kp K             &kp H                   &kp COMMA                &kp DOT               &mt NON_US_BACKSLASH FSLH  &kp RET
+                                                        &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT        &thirdlayer    &mt SLASH PERIOD  &lt 3 SPACE             &lt 6 RIGHT_PARENTHESIS
             >;
         };
 
@@ -133,10 +133,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB     &kp N1        &kp N2        &kp N3        &kp N4        &kp N5          &trans   &kp F7   &kp F8   &kp F9  &trans  &kp BSPC
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp F4   &kp F5   &kp F6  &trans  &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans          &trans   &kp F1   &kp F2   &kp F3  &trans  &trans
-                                        &kp LGUI      &trans        &kp SPACE       &kp F12  &kp F11  &kp F10
+&kp TAB     &kp N1      &kp N2        &kp N3        &kp N4        &kp N5          &trans   &kp F7   &kp F8   &kp F9  &trans  &kp BSPC
+&bt BT_CLR  &bt BT_CLR  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans   &kp F4   &kp F5   &kp F6  &trans  &trans
+&kp LSHFT   &trans      &trans        &trans        &trans        &trans          &trans   &kp F1   &kp F2   &kp F3  &trans  &trans
+                                      &kp LGUI      &trans        &kp SPACE       &kp F12  &kp F11  &kp F10
             >;
         };
     };
