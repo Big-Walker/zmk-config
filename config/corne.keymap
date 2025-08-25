@@ -48,11 +48,53 @@
     };
 
     macros {
-        zs: zs {
+        WpasS: WpasS {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&zs &kp>;
-            label = "ZS";
+            bindings = <&kp LS(A) &kp U &kp T &kp U &kp M &kp N &kp N2 &kp N5>;
+            label = "current wpw";
+            tap-ms = <10>;
+        };
+
+        P123: P123 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp R &kp E &kp D &kp T &kp R &kp E &kp E &kp N1 &kp N0>;
+            label = "P123";
+        };
+    };
+
+    combos {
+        compatible = "zmk,combos";
+
+        BackspacE {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <7 8>;
+        };
+
+        DeletE {
+            bindings = <&kp DELETE>;
+            key-positions = <8 9>;
+        };
+
+        ReturN {
+            bindings = <&kp RET>;
+            key-positions = <19 20>;
+        };
+
+        EscapE {
+            bindings = <&kp ESCAPE>;
+            key-positions = <3 4>;
+        };
+
+        TaB {
+            bindings = <&kp TAB>;
+            key-positions = <15 16>;
+        };
+
+        WpasS {
+            bindings = <&WpasS>;
+            key-positions = <27 28>;
         };
     };
 
@@ -67,10 +109,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&tog 4      &kp Q                 &kp W                 &kp F                   &kp P                   &kp B          &kp J             &kp L                   &kp U                    &kp Y                 &mt LS(NUMBER_2) APOS      &kp BSPC
-&kp ESCAPE  &home_row LEFT_WIN A  &home_row LEFT_ALT R  &home_row LCTRL S       &home_row LEFT_SHIFT T  &mt EQUAL G    &kp M             &home_row LEFT_SHIFT N  &home_row RCTRL E        &home_row LEFT_ALT I  &home_row RIGHT_WIN O      &kp DELETE
-&kp TAB     &kp Z                 &kp X                 &kp C                   &kp D                   &kp V          &kp K             &kp H                   &kp COMMA                &kp DOT               &mt NON_US_BACKSLASH FSLH  &kp RET
-                                                        &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT        &thirdlayer    &mt SLASH PERIOD  &lt 3 SPACE             &lt 6 RIGHT_PARENTHESIS
+&tog 4      &kp Q                 &kp W                 &kp F                   &kp P                   &home_row HASH B     &kp J             &kp L                   &kp U                    &kp Y                 &mt LS(NUMBER_2) APOS      &kp BSPC
+&kp ESCAPE  &home_row LEFT_WIN A  &home_row LEFT_ALT R  &home_row LCTRL S       &home_row LEFT_SHIFT T  &home_row EQUAL G    &kp M             &home_row LEFT_SHIFT N  &home_row RCTRL E        &home_row LEFT_ALT I  &home_row RIGHT_WIN O      &kp DELETE
+&kp TAB     &kp Z                 &kp X                 &kp C                   &kp D                   &kp V                &kp K             &kp H                   &kp COMMA                &kp DOT               &mt NON_US_BACKSLASH FSLH  &kp RET
+                                                        &lt 1 LEFT_PARENTHESIS  &lt 2 LEFT_SHIFT        &thirdlayer          &mt SLASH PERIOD  &lt 3 SPACE             &lt 6 RIGHT_PARENTHESIS
             >;
         };
 
